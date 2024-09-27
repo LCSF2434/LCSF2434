@@ -17,6 +17,177 @@ body {
     text-align: center;
 }
 
+.mainBody a {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #55aeac;
+    display: inline-block;
+    width: 100px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align:center;
+    border: 1px solid;
+    border-color: #000000;
+    overflow-wrap: break-word;
+}
+
+.mainBody a:hover{
+    background-color: #122525;
+}
+
+.mainBody ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.mainBody li{
+    background: #55aeac;
+    display: inline-block;
+    border: 1px;
+    border-color: #000000;
+}
+
+.faqBody p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: left;
+}
+
+.faqBody li{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: left;
+}
+
+.teamPic img {
+    display: block;
+    margin: auto;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.mediaPic img {
+    display: block;
+    margin: auto;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.mediaPic p {
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.popularFireplaces img {
+    display: block;
+    margin: auto;
+    border: 2px solid;
+    border-color: #000000;
+    width: 250px; 
+    height: 250px; 
+    object-fit: cover;
+    object-position: 25% 25%; 
+    opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    opacity: 50%;
+}
+
+.popularFireplaces img:hover{
+    opacity: 100;
+}
+
+.popularFireplaces ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.popularFireplaces li{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.aboutMap li{
+    display: inline-block;
+}
+
+.aboutMap ul{
+    text-align: center;
+}
+
+.contactBody h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 0 0 10px #000000, 0 0 15px #000000;
+}
+
+.contactBody p {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contactBody a {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #55aeac;
+    display: inline-block;
+    width: 300px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align:center;
+    border: 1px solid;
+    border-color: #000000;
+    overflow-wrap: break-word;
+    opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    opacity: 100%;
+}
+
+.contactBody a:hover{
+    background-color: #122525;
+    opacity: 100%;
+}
+
+.contactBody ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.contactBody li{
+    background: #55aeac;
+    display: inline-block;
+    border: 1px;
+    border-color: #000000;
+}
+
+.contactPic img{
+    display: block;
+    margin: auto;
+    border: 1px solid;
+    border-color: #000000;
+}
+
 .topOfPage h1 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #a0a0a0;
@@ -55,6 +226,10 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
+    opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    opacity: 100%;
 }
 
 .navbar a:hover{
@@ -81,6 +256,10 @@ body {
     text-align: center;
     border: 1px solid;
     border-color: #000000;
+    opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    opacity: 100%;
 }
 
 .endOfPage ul{
@@ -95,9 +274,11 @@ body {
     display: inline-block;
     border: 1px;
     border-color: #000000;
+
 }
 
 .endOfPage a:hover{
     background-color: #122525;
+    opacity: 100%;
 }
 
