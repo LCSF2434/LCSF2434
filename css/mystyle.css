@@ -211,6 +211,7 @@ body {
     text-align: center;
     border: 1px solid;
     border-color: #000000;
+    border-radius: 25px;
 }
 
 .navbar li{
@@ -241,7 +242,7 @@ body {
 .endOfPage p{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #FFFFFF;
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
 }
 
@@ -267,7 +268,7 @@ body {
 .endOfPage ul{
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -283,4 +284,3 @@ body {
     background-color: #122525;
     opacity: 100%;
 }
-
