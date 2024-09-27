@@ -70,6 +70,8 @@ body {
     margin: auto;
     border: 1px solid;
     border-color: #000000;
+    max-width:100%;
+    max-height:100%;
 }
 
 .mediaPic img {
@@ -77,6 +79,8 @@ body {
     margin: auto;
     border: 1px solid;
     border-color: #000000;
+    max-width:100%;
+    max-height:100%;
 }
 
 .mediaPic p {
@@ -186,6 +190,8 @@ body {
     margin: auto;
     border: 1px solid;
     border-color: #000000;
+    max-width:100%;
+    max-height:100%;
 }
 
 .topOfPage h1 {
