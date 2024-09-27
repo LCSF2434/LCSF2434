@@ -1,0 +1,103 @@
+body {
+    background-color: #393939
+}
+
+.mainBody h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 0 0 10px #000000, 0 0 15px #000000;
+}
+
+.mainBody p {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+}
+
+.topOfPage h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #a0a0a0;
+    font-size: 35px;
+    text-align: center;
+    text-shadow: 0 0 10px #000000, 0 0 15px #000000;
+}
+
+.topOfPage img {
+    display: block;
+    margin: auto;
+}
+
+.navbar ul{
+    list-style: none;
+    background: #55aeac;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.navbar li{
+    display: inline-block;
+}
+
+.navbar a{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color: #FFFFFF;
+    width: 100px;
+    display: block;
+    padding: 25px 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: #122525;
+}
+
+.endOfPage p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #FFFFFF;
+    font-size: 18px;
+    text-align: center;
+}
+
+.endOfPage a{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: #55aeac;
+    color: #FFFFFF;
+    width: 320px;
+    display: block;
+    padding: 15px 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid;
+    border-color: #000000;
+}
+
+.endOfPage ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.endOfPage li{
+    background: #55aeac;
+    display: inline-block;
+    border: 1px;
+    border-color: #000000;
+}
+
+.endOfPage a:hover{
+    background-color: #122525;
+}
+
