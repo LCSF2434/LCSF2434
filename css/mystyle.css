@@ -1,13 +1,28 @@
+/*
+Author: Sean Clarke
+Date: TBD
+File Name: mystyle.css
+*/
+
+/*CSS RESET*/
+body, header, nav, main, footer, img, h1, h2, h3, p, a, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*Style rules for body and images */
 body {
     background-color: #393939
 }
-
+/*Style rules for mainBody class */
 .mainBody h1 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #ffffff;
     font-size: 25px;
     text-align: center;
     text-shadow: 0 0 10px #000000, 0 0 15px #000000;
+    padding: 10px;
 }
 
 .mainBody h2 {
@@ -16,6 +31,7 @@ body {
     font-size: 20px;
     text-align: center;
     text-shadow: 2px 2px 0px #000000;
+    padding: 10px;
 }
 
 .mainBody img {
@@ -77,12 +93,14 @@ body {
     text-shadow: 2px 2px 0px #000000;
 }
 
+/*Style rules for faqBody class*/
 .faqBody p {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #ffffff;
     font-size: 25px;
     text-align: center;
     text-shadow: 2px 2px 0px #000000;
+    padding: 10px;
 }
 
 .faqBody ul {
@@ -97,6 +115,7 @@ body {
     text-shadow: 2px 2px 0px #000000;
 }
 
+/*Style rules for aboutMap class*/
 .aboutMap li {
     display: inline-block;
 }
@@ -105,6 +124,7 @@ body {
     text-align: center;
 }
 
+/*Style rules for contactBody class*/
 .contactBody h1 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #ffffff;
@@ -155,15 +175,7 @@ body {
     border: 1px solid #000000;
 }
 
-.contactPic img {
-    display: block;
-    margin: auto;
-    border: 1px solid;
-    border-color: #000000;
-    max-width:100%;
-    max-height:100%;
-}
-
+/*Style rules for topOfPage class*/
 .topOfPage h1 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #a0a0a0;
@@ -179,7 +191,8 @@ body {
     max-height:100%;
 }
 
-.navbar ul {
+/*Style rules for nav bar*/
+nav ul {
     list-style: none;
     background: #55aeac;
     padding: 0;
@@ -192,11 +205,11 @@ body {
 
 }
 
-.navbar li {
+nav li {
     display: inline-block;
 }
 
-.navbar a {
+nav a {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
     color: #FFFFFF;
@@ -212,18 +225,19 @@ body {
     text-shadow: 2px 2px 2px #000000;
 }
 
-.navbar a:hover {
+nav a:hover {
     background-color: #122525;
 }
 
-.endOfPage p {
+/*Style rules for footer*/
+footer p {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #FFFFFF;
     font-size: 14px;
     text-align: center;
 }
 
-.endOfPage a {
+footer a {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background: #55aeac;
     color: #FFFFFF;
@@ -240,24 +254,25 @@ body {
 	transition: .3s ease-in-out;
 }
 
-.endOfPage ul {
+footer ul {
     list-style: none;
     padding: 0;
     margin-top: 10px;
     text-align: center;
 }
 
-.endOfPage li {
+footer li {
     background: #55aeac;
     display: inline-block;
     border: 2px solid #000000;
 
 }
 
-.endOfPage a:hover {
+footer a:hover {
     background-color: #122525;
 }
 
+/*Style rules for "fireplaces" classes in special.html*/
 .fireplaces-container {
     display: flex;
     padding: 10px;
@@ -298,45 +313,54 @@ body {
     transition:all 0.9s ease-in-out;
 }
 
-.fireplaces-image .info {
+.fireplaces-image .fireplaces-info {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.75);
     color: #fff;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     text-align: left;
 }
 
-.fireplaces:hover .info {
+.fireplaces:hover .fireplaces-info {
     opacity: 1;
 }
 
-.info h2 {
+.fireplaces-info h2 {
     font-size: 22px;
     font-weight: bold;
     text-align: center;
+    color: #78f3f1;
     text-shadow: 1px 1px 0px #000000;
+    margin-top: 10px;
 }
 
-.info h3 {
-    font-size: 18px;
+.fireplaces-info h3 {
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
+    color: #78f3f1;
     text-shadow: 1px 1px 0px #000000;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.info li {
+.fireplaces-info li {
     font-size: 16px;
-    text-align: left;
+    text-align:left;
     text-shadow: 1px 1px 0px #000000;
+    margin-left: 10px;
+    margin-top: 5px;
 }
 
-.info p {
+.fireplaces-info p {
     font-size: 16px;
     text-align: center;
     text-shadow: 1px 1px 0px #000000;
+    margin-left: 10px;
+    margin-top: 10px;
 }
