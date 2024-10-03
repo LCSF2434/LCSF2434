@@ -20,15 +20,15 @@ body {
 
 .mainBody img {
     display: block;
-    max-width:100%;
-    max-height:100%;
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    max-height: 500px;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    border: 2px;
-    border-color: #000000;
+    border: 2px solid #000000;
     border-radius: 25px;
-    border-style:solid;
 }
 
 .mainBody p {
@@ -54,6 +54,8 @@ body {
     border-color: #000000;
     overflow-wrap: break-word;
     text-shadow: 2px 2px 0px #000000;
+    transition: .3s ease-in-out;
+    opacity: 1;
 }
 
 .mainBody a:hover {
@@ -71,8 +73,7 @@ body {
 .mainBody li {
     background: #55aeac;
     display: inline-block;
-    border: 1px;
-    border-color: #000000;
+    border: 1px solid #000000;
     text-shadow: 2px 2px 0px #000000;
 }
 
@@ -134,9 +135,7 @@ body {
     border-color: #000000;
     overflow-wrap: break-word;
     opacity: 1;
-	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
-    opacity: 100%;
 }
 
 .contactBody a:hover {
@@ -153,8 +152,7 @@ body {
 .contactBody li {
     background: #55aeac;
     display: inline-block;
-    border: 1px;
-    border-color: #000000;
+    border: 1px solid #000000;
 }
 
 .contactPic img {
@@ -185,12 +183,13 @@ body {
     list-style: none;
     background: #55aeac;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     text-align: center;
-    border: 2px;
-    border-color: #000000;
+    border: 2px solid #000000;
     border-radius: 25px;
-    border-style:solid;
+    font-size: 0;
+    max-width: 1000px;
+
 }
 
 .navbar li {
@@ -210,6 +209,7 @@ body {
     text-align: center;
 	transition: .3s ease-in-out;
     opacity: 1;
+    text-shadow: 2px 2px 2px #000000;
 }
 
 .navbar a:hover {
@@ -237,9 +237,7 @@ body {
     border: 1px solid;
     border-color: #000000;
     opacity: 1;
-	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
-    opacity: 100%;
 }
 
 .endOfPage ul {
@@ -252,14 +250,12 @@ body {
 .endOfPage li {
     background: #55aeac;
     display: inline-block;
-    border: 1px;
-    border-color: #000000;
+    border: 2px solid #000000;
 
 }
 
 .endOfPage a:hover {
     background-color: #122525;
-    opacity: 100%;
 }
 
 .fireplaces-container {
@@ -270,11 +266,8 @@ body {
 }
 
 .fireplaces:hover .fireplaces-image img {
-    transition:all 0.6s ease-in-out;
-    filter: blur(5px);
-    filter:saturate(0);
-    scale: 1.1;
-
+    filter:saturate(0) blur(2px);
+    transform: scale(1.1);
 }
 
 .fireplaces {
@@ -302,7 +295,7 @@ body {
     height: 100%;
     object-fit: cover;
     object-position: 50% 80%;
-    transition:all 0.6s ease-in;
+    transition:all 0.9s ease-in-out;
 }
 
 .fireplaces-image .info {
@@ -316,41 +309,34 @@ body {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     text-align: left;
-    z-index: 2;
 }
 
 .fireplaces:hover .info {
     opacity: 1;
-    z-index: 2;
 }
 
 .info h2 {
     font-size: 22px;
-    font-style: bold;
+    font-weight: bold;
     text-align: center;
-    z-index: 2;
     text-shadow: 1px 1px 0px #000000;
 }
 
 .info h3 {
     font-size: 18px;
-    font-style: bold;
+    font-weight: bold;
     text-align: center;
-    z-index: 2;
     text-shadow: 1px 1px 0px #000000;
 }
 
 .info li {
     font-size: 16px;
     text-align: left;
-    margin-left: 12px;
-    z-index: 2;
     text-shadow: 1px 1px 0px #000000;
 }
 
 .info p {
     font-size: 16px;
     text-align: center;
-    z-index: 2;
     text-shadow: 1px 1px 0px #000000;
 }
