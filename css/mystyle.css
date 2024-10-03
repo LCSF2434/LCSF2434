@@ -15,15 +15,16 @@ body {
     color: #ffffff;
     font-size: 20px;
     text-align: center;
+    text-shadow: 2px 2px 0px #000000;
 }
 
 .mainBody img {
-    max-width: 500px;
-    max-height: 500px;
+    display: block;
+    max-width:100%;
+    max-height:100%;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    display: block;
     border: 2px;
     border-color: #000000;
     border-radius: 25px;
@@ -35,6 +36,7 @@ body {
     color: #ffffff;
     font-size: 15px;
     text-align: center;
+    text-shadow: 2px 2px 0px #000000;
 }
 
 .mainBody a {
@@ -51,34 +53,38 @@ body {
     border: 1px solid;
     border-color: #000000;
     overflow-wrap: break-word;
+    text-shadow: 2px 2px 0px #000000;
 }
 
-.mainBody a:hover{
+.mainBody a:hover {
     background-color: #122525;
 }
 
-.mainBody ul{
+.mainBody ul {
     list-style: none;
     padding: 0;
     margin: 0;
     text-align: center;
+    text-shadow: 2px 2px 0px #000000;
 }
 
-.mainBody li{
+.mainBody li {
     background: #55aeac;
     display: inline-block;
     border: 1px;
     border-color: #000000;
+    text-shadow: 2px 2px 0px #000000;
 }
 
-.faqBody p{
+.faqBody p {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #ffffff;
     font-size: 25px;
     text-align: center;
+    text-shadow: 2px 2px 0px #000000;
 }
 
-.faqBody ul{
+.faqBody ul {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #ffffff;
 	position: relative; 
@@ -87,67 +93,14 @@ body {
 	transform: translateX(-50%); 
     font-size: 20px;
     margin: auto;
+    text-shadow: 2px 2px 0px #000000;
 }
 
-.popularFireplaces {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.popularFireplaces img {
-    display: block;
-    border: 2px solid;
-    border-color: #000000;
-    width: 250px; 
-    height: 250px; 
-    object-fit: cover;
-    object-position: 25% 25%; 
-    opacity: 1;
-	transition: .3s ease-in-out;
-    opacity: 50%;
-    border-radius: 25px;
-}
-
-.popularFireplaces img:hover{
-    opacity: 1;
-}
-
-.popularFireplaces ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-}
-
-.popularFireplaces li{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    display: inline-block;
-    color: #FFFFFF;
-    font-size: 18px;
-}
-
-.popularFireplacesContent {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    background: rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-}
-
-.popularFireplacesContent:hover {
-opacity: 1;
-}
-
-.aboutMap li{
+.aboutMap li {
     display: inline-block;
 }
 
-.aboutMap ul{
+.aboutMap ul {
     text-align: center;
 }
 
@@ -186,26 +139,25 @@ opacity: 1;
     opacity: 100%;
 }
 
-.contactBody a:hover{
+.contactBody a:hover {
     background-color: #122525;
-    opacity: 100%;
 }
 
-.contactBody ul{
+.contactBody ul {
     list-style: none;
     padding: 0;
     margin: 0;
     text-align: center;
 }
 
-.contactBody li{
+.contactBody li {
     background: #55aeac;
     display: inline-block;
     border: 1px;
     border-color: #000000;
 }
 
-.contactPic img{
+.contactPic img {
     display: block;
     margin: auto;
     border: 1px solid;
@@ -229,7 +181,7 @@ opacity: 1;
     max-height:100%;
 }
 
-.navbar ul{
+.navbar ul {
     list-style: none;
     background: #55aeac;
     padding: 0;
@@ -241,11 +193,11 @@ opacity: 1;
     border-style:solid;
 }
 
-.navbar li{
+.navbar li {
     display: inline-block;
 }
 
-.navbar a{
+.navbar a {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
     color: #FFFFFF;
@@ -260,18 +212,18 @@ opacity: 1;
     opacity: 1;
 }
 
-.navbar a:hover{
+.navbar a:hover {
     background-color: #122525;
 }
 
-.endOfPage p{
+.endOfPage p {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #FFFFFF;
     font-size: 14px;
     text-align: center;
 }
 
-.endOfPage a{
+.endOfPage a {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background: #55aeac;
     color: #FFFFFF;
@@ -290,14 +242,14 @@ opacity: 1;
     opacity: 100%;
 }
 
-.endOfPage ul{
+.endOfPage ul {
     list-style: none;
     padding: 0;
     margin-top: 10px;
     text-align: center;
 }
 
-.endOfPage li{
+.endOfPage li {
     background: #55aeac;
     display: inline-block;
     border: 1px;
@@ -305,7 +257,100 @@ opacity: 1;
 
 }
 
-.endOfPage a:hover{
+.endOfPage a:hover {
     background-color: #122525;
     opacity: 100%;
+}
+
+.fireplaces-container {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    justify-content: center;
+}
+
+.fireplaces:hover .fireplaces-image img {
+    transition:all 0.6s ease-in-out;
+    filter: blur(5px);
+    filter:saturate(0);
+    scale: 1.1;
+
+}
+
+.fireplaces {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    overflow: clip;
+    border: 1px solid #000000;
+
+}
+
+.fireplaces-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+.fireplaces-image img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 80%;
+    transition:all 0.6s ease-in;
+}
+
+.fireplaces-image .info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    text-align: left;
+    z-index: 2;
+}
+
+.fireplaces:hover .info {
+    opacity: 1;
+    z-index: 2;
+}
+
+.info h2 {
+    font-size: 22px;
+    font-style: bold;
+    text-align: center;
+    z-index: 2;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+.info h3 {
+    font-size: 18px;
+    font-style: bold;
+    text-align: center;
+    z-index: 2;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+.info li {
+    font-size: 16px;
+    text-align: left;
+    margin-left: 12px;
+    z-index: 2;
+    text-shadow: 1px 1px 0px #000000;
+}
+
+.info p {
+    font-size: 16px;
+    text-align: center;
+    z-index: 2;
+    text-shadow: 1px 1px 0px #000000;
 }
